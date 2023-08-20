@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Game Tebak Angka</title>
+</head>
+<body>
+    <div id="pembukaan">
+        <img src="images/welcome.png" alt="" id="selamatDatang">
+        <div class="waviy">
+            <span style="--i:1">G</span>
+            <span style="--i:2">A</span>
+            <span style="--i:3">M</span>
+            <span style="--i:4">E</span>
+            &nbsp;
+            <span style="--i:5">T</span>
+            <span style="--i:6">E</span>
+            <span style="--i:7">B</span>
+            <span style="--i:8">A</span>
+            <span style="--i:9">K</span>
+            &nbsp;
+            <span style="--i:10">A</span>
+            <span style="--i:11">N</span>
+            <span style="--i:12">G</span>
+            <span style="--i:13">K</span>
+            <span style="--i:14">A</span>
+        </div>
+        <h1 id="game">
+            Anda mempunya 5 kesempatan
+        </h1>
+        <a href="" id="mulai">Mulai</a>
+    </div>
+    <div class="inputan1" id="inputan1">
+        <h1>Masukkan tebakan anda:</h1>
+        <div class="input-container">
+            <input type="text" id="input" required="">
+            <label for="input" class="label">Masukkan Angka</label>
+            <div class="underline"></div>
+        </div>
+        <button id="submit">Submit</button>
+        <img src="images/tanda-tanya.png" alt="">
+    </div>
+    <div id="goblok" class="goblok">
+        <h1>
+            yeeeee goblok
+            <br>
+            disuruh ampe 10
+            <br>
+            malah lebih
+        </h1>
+        <img src="images/cina.png" alt="">
+    </div>
+    <div class="congrats" id="congrats">
+        <img src="images/congrats.png" alt="">
+        <h1></h1>
+    </div>
+    <div class="cobaLagi" id="cobaLagi">
+        <h1></h1>
+        <div class="input-container" id="input-container">
+            <input type="text" id="input2" required="">
+            <label for="input" class="label">Masukkan Angka</label>
+            <div class="underline"></div>
+        </div>
+        <button id="submit2">Submit</button>
+    </div>
+    <img src="images/sound.png" alt="" id="sound">
+    <audio id="welcome" src="backsound/music_pop_6-28744.mp3" autoplay loop></audio>  
+    <audio id="backsound" src="backsound/congrats.wav" onended></audio>
+    <script src="index.js"></script>
+</body>
+</html>

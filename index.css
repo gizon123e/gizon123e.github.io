@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'More Sugar';
+    src: url(fonts/more-sugar/MoreSugar-Regular.ttf);
+}
+body{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pembukaan{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+#game, a{
+    font-family: 'More Sugar', sans-serif;
+    color: #DE4948;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+/*TEXT ANIMATION*/
+.waviy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+    font-size: 40px;
+}
+.waviy span {
+    position: relative;
+    font-family: 'More Sugar', sans-serif;
+    display: inline-block;
+    color: #DE4948;
+    text-transform: uppercase;
+    animation: waviy 1s infinite;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes waviy {
+    0%,40%,100% {
+    transform: translateY(0)
+    }
+    20% {
+    transform: translateY(-20px)
+    }
+}
+
+.inputan1{
+    position: absolute;
+    width: 420px;
+    height: 450px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    background-color: #b39292;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.inputan1 h1{
+    color: black;
+}
+.inputan1 img{
+    width: 100px;
+    height: 200px;
+    object-fit: contain;
+}
+.input-container {
+    display: block;
+    position: relative;
+    margin: 20px auto;
+    width: 200px;
+}
+  
+.input-container input[type="text"] {
+    font-size: 20px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 5px 0;
+    background-color: transparent;
+    outline: none;
+}
+  
+.input-container .label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #000;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+  
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+    top: -20px;
+    font-size: 16px;
+    color: #333;
+}
+  
+.input-container .underline {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: #333;
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+  
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+    transform: scaleX(1);
+}
+button {
+    border: none;
+    outline: none;
+    background-color: #DE4948;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #000;
+}
+  
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+#goblok{
+    height: 420px;
+    width: 520px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#goblok h1{
+    font-family: 'More Sugar', sans-serif;
+    color: #DE4948;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+#goblok img{
+    height: 200px;
+    width: 200px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+.congrats{
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.congrats h1{
+    font-family: 'More Sugar', sans-serif;
+    color: #DE4948;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.cobaLagi{
+    width: 320px;
+    height: 450px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DE4948;
+    border-radius: 40px;
+}
+.cobaLagi h1{
+    font-family: 'More Sugar', sans-serif;
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 20px;
+}
+.cobaLagi button {
+    border: none;
+    outline: none;
+    background-color: #6c5ce7;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px #fff;
+}
+  
+button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px #a29bfe;
+}
+#sound{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    right: 0;
+    bottom: 0;
+}
+@media (max-width: 500px){
+    #selamatDatang{
+        width: 90%;
+        object-fit: contain;
+    }
+    .inputan1{
+        width: 90%;
+    }
+    .inputan1 h1{
+        font-size: 20px;
+    }
+    .cobaLagi{
+        width: 90%;
+    }
+    .waviy {
+        font-size: 23px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+}
