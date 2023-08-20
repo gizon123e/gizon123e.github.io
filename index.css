@@ -243,4 +243,9 @@ button:active {
         margin-bottom: 30px;
         margin-top: 30px;
     }
+    .congrats img{
+        width: 90%;
+        height: 150px;
+        object-fit: contain;
+    }
 }
